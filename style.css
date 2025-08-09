@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcfbf9;
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: #5c5b5b;
+
+}
+
+/*=========================
+Grid Layout
+=========================*/
+
+.grid-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+   
+
+}
+
+
+
+
+/*=========================
+Overlay
+=========================*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+    width: 37.5rem;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: .1rem solid #778;
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+}
+
+.modal-close {
+    position: absolute;
+    right: 1.5rem;
+    top: .5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*=========================
+Card
+=========================*/
+.card {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: .5rem;
+    background: #fff;
+    border: .05rem solid lightgray;
+}
+
+.text-container {
+    line-height: .5;
+}
+
+.text-container h2 {
+    font-size: 1.8rem;
+}
+
+.text-container p {
+    color: rgb(145, 135, 135);
+    font-size: 1.2rem;
+}
+
+.avatar {
+    clip-path: circle(50%);
+}
