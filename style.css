@@ -13,14 +13,14 @@ body {
 
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: #5c5b5b;
 
 }
 .grid-container {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr)); 
 }
 
 .overlay {
@@ -39,7 +39,7 @@ h1 {
     text-align: center;
     background: #fff;
     border: .1rem solid #778;
-    border-radius: .5rem;
+    border-radius: 1.5rem;
     padding: 3rem 2rem;
 }
 
@@ -63,7 +63,7 @@ h1 {
     padding: 1rem;
     align-items: center;
     justify-content: space-around;
-    border-radius: .5rem;
+    border-radius: 1.5rem;
     background: #fff;
     border: .05rem solid lightgray;
 }
@@ -73,12 +73,12 @@ h1 {
 }
 
 .text-container h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .text-container p {
     color: rgb(145, 135, 135);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .avatar {
