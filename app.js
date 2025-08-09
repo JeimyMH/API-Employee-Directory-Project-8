@@ -8,6 +8,7 @@ const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 
 
+
 fetch(urlAPI)
 .then((res) => res.json())
 .then((res) => res.results)
@@ -90,8 +91,22 @@ gridContainer.addEventListener('click', e => {
 
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
-
-    
-
-
 });
+
+    const searchInput = document.getElementById('searchInput');
+    const itemsContainer = document.getElementById('itemsContainer');
+    const items = itemsContainer.getElementsByClassName('item'); // Or querySelectorAll('.item')
+
+        searchInput.addEventListener('input', function() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        for (let i = 0; i < items.length; i++) {
+            const itemText = items[i].textContent.toLowerCase();
+
+            if (itemText.includes(searchTerm)) {
+                items[i].style.display = ''; // Show the item
+            } else {
+                items[i].style.display = 'none'; // Hide the item
+            }
+        }
+    });
