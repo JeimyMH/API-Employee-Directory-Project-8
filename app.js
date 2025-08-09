@@ -1,4 +1,4 @@
-//global variables
+
 let employees = [];
 const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
 email, location, phone, dob &noinfo &nat=US`;
@@ -7,23 +7,22 @@ const overlay = document.querySelector(".overlay");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 
-//fetch data from api
+
 fetch(urlAPI)
 .then((res) => res.json())
 .then((res) => res.results)
 .then(displayEmployees)
 .catch(err => console.log(err));
 
-//display employees
+
 
 function displayEmployees(employeeData) {
 
     employees = employeeData;
 
-    //store the employee HTML as we create it
     let employeeHTML = '';
 
-    //loop through each employee and create  HTML markup
+
     employees.forEach((employee, index) => {
         let name = employee.name;
         let email = employee.email;
@@ -41,17 +40,11 @@ function displayEmployees(employeeData) {
             </div>
         
         `
-
-
-
     });
 
     gridContainer.innerHTML = employeeHTML;
 
-
 }
-
-//display modal
 
 function displayModal(index) {
     let {name, dob, phone, email, location: { city, street, state, postcode}, picture} = employees[index];
@@ -81,9 +74,9 @@ modalContainer.innerHTML = modalHTML;
 
 gridContainer.addEventListener('click', e => {
 
-    //make sure the click is not on the grid container itself
+
     if(e.target !== gridContainer) {
-        //select the card element based on its proximity to actual element clicked
+
         const card = e.target.closest(".card");
         const index = card.getAttribute('data-index');
 

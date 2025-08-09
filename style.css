@@ -17,25 +17,12 @@ h1 {
     color: #5c5b5b;
 
 }
-
-/*=========================
-Grid Layout
-=========================*/
-
 .grid-container {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-   
-
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); 
 }
 
-
-
-
-/*=========================
-Overlay
-=========================*/
 .overlay {
     position: absolute;
     top: 0;
@@ -71,9 +58,6 @@ Overlay
 }
 
 
-/*=========================
-Card
-=========================*/
 .card {
     display: flex;
     padding: 1rem;
