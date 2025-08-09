@@ -8,14 +8,19 @@ body {
     position: relative;
     padding: 2rem;
     font-family: 'Roboto', sans-serif;
-    background-color: #fcfbf9;
+    background-color: lightsteelblue;
 }
 
 
 h1 {
-    font-size: 2.8rem;
-    color: #5c5b5b;
+    display: flex;
+     font-size: 2.8rem;
+    color: #4a4a4a;
+}
 
+input {
+    display: flex;
+width: 20%;
 }
 .grid-container {
     display: grid;
@@ -50,7 +55,8 @@ h1 {
     cursor: pointer;
     border: none;
     background: none;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .hidden {
